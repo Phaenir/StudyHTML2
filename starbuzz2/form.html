@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" http-equiv="content-type" content="text/html">
+    <title>The Starbuzz Bean Machine</title>
+      <link rel="stylesheet" href="styledform.css" type="text/css"/>
+      <link rel="stylesheet" href="starbuzz.css" type="text/css">
+  </head>
+  <body>
+
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out the form below and click submit to order</h2>
+    <form action="http://starbuzzcoffee.com/processorder.php" method="post">
+        <table>
+            <tr>
+                <th>
+                    Choose coffee:
+                </th>
+                <td>
+                    <label>
+                        <select name="beans">
+                            <option value="House Blend">House Blend</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Kenya">Kenya</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Type:
+                </th>
+                <td>
+                    <label>
+                        <input type="radio" name="beantype" value="beans"/>
+                        Coffee in beans
+                    </label><br/>
+                    <label>
+                        <input type="radio" name="beantype" value="mashed" checked/>
+                        Mashed coffee
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Additional services:
+                </th>
+                <td>
+                    <label>
+                        <input type="checkbox" name="extras[]" value="package"/>Surprise package
+                    </label><br/>
+                    <label>
+                        <input type="checkbox" name="extras[]" value="catalog" checked/>Deliver catalog with order
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Deliver to following address:
+                </th>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                Name:
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="text" name="name"/>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Address:
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="text" name="address"/>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                City:
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="text" name="city"/>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                State:
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="text" name="state"/>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Country:
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="text" name="country"/>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ZIP code:
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="text" name="zip"/>
+                                </label>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phone:
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="text" name="phone"/>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Comments from clients:
+                </th>
+                <td>
+                    <label>
+                        <textarea name="comments" rows="10" cols="48"></textarea>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+
+                </th>
+                <td>
+                    <input type="submit" value="Order Now"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+  </body>
+</html>
+
